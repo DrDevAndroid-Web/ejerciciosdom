@@ -1,0 +1,315 @@
+:root{
+    --background-color: black;
+    --color: white; 
+    --main-color: yellow;
+}
+
+
+.btn{
+    width: auto;
+    height: 3vw;
+    background-color: brown;
+    font-size: 50%;
+}
+
+body{
+    text-align: center;
+}
+
+
+
+h3{
+    background-color: rgb(249, 253, 10);
+    margin-top: -8px;
+    margin-right: -10px;
+    margin-left: -10px;
+    height: 40px;
+    text-align: center;
+}
+
+h4{
+    position: absolute;
+    width: 50vw;
+    top: 2vw;
+    left: 25vw;
+}
+
+
+.secciones{
+    visibility: hidden;
+    background-color: cadetblue;
+    width:80%;
+    position: absolute;
+    top: 10vw;
+    left: 170px;
+    box-shadow: black 10px 10px 50px;
+    border-radius: 5px;
+    font-size: 1.5em;
+ 
+    
+
+}
+
+#S1{
+    background-color: cadetblue;
+    width:80%;
+    position: absolute;
+    top: 10vw;
+    left: 170px;
+    box-shadow: black 10px 10px 50px;
+    border-radius: 5px;
+    place-items: center;
+    font-size: 1.5em;
+}
+
+
+
+
+
+
+#listaMenus li{
+    text-decoration: none;
+    list-style: none;
+    margin-left: -40px;
+    font-size: 2em;
+}
+
+
+#listaMenus{
+    background-color: darkslategrey;
+    opacity: 70%;
+    width: 10vw;
+    text-align: center;
+    visibility: hidden;
+    position: absolute;
+    top: 8vw;
+    border-radius: 20px;
+    transition: 
+        opacity 2s;
+   
+ 
+}
+
+#listaMenus li:hover{
+    color:rgb(252, 252, 252);
+    margin: 5px;
+    cursor: pointer;
+    
+}
+
+
+#boton{
+    position: fixed;
+    bottom: 2vw;
+    right: 5vw;
+}
+
+#boton:hover{
+    cursor: pointer;
+}
+
+
+#reloj{
+    width: 200px;
+    height: 50px;
+    background-color: rgb(112, 108, 108);
+    color: white;
+    border-radius: 5px;
+    position: relative;
+    left: 43%;
+  
+}
+
+#reloj H3{
+    width: 190px;
+    height: 40px;
+    background-color: black;
+    margin: 5px 5px;
+    position: relative;
+    top: 5px;
+}
+
+
+#cuadro{
+    border: 2px solid white;
+    width: 80%;
+    height: 70%;
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    background-color: brown;
+    box-shadow: 2px 4px 8px rgb(15, 132, 228);
+}
+
+#pelota{
+    width: 30px;
+    height: 30px;
+    border: 1px solid white;
+    margin-top: 60px;
+    margin-left: 120px;
+    border-radius: 50%;
+    background: radial-gradient(blue 20%, white);
+}
+
+#cajaRegresiva{
+    margin-top: 60px;
+}
+
+
+#btnScroll{
+    border-radius: 51%;
+    background-color: yellow;
+    cursor: pointer;
+    visibility: hidden;
+    position: fixed;
+    bottom: 4vw;
+    right: 18vw;
+    width: 3rem;
+    height: 3rem;
+    border: 0;
+    font-size: 1.5rem;
+}
+
+#dark-theme-btn{
+    position: fixed;
+    z-index: 999;
+    bottom: 4vh;
+    left: 5vw;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: var(--main-color);
+    cursor: pointer;
+    outline: 0;
+    border: 0;
+    transition: all 0.3s ease-out;
+}
+
+#dark-theme-btn:hover{
+    background-color: var(--background-color);
+}
+
+ .dark-mode{
+    background-color: var(--background-color);
+    color:var(--main-color);
+ }
+
+
+
+ /* **********     ContactForm Validations     ********** */
+.contact-form {
+    --form-ok-color: #4caf50;
+    --form-error-color: #f44336;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+  }
+  
+  .contact-form > * {
+    padding: 0.5rem;
+    margin: 1rem auto;
+    display: block;
+    width: 100%;
+  }
+  
+  .contact-form textarea {
+    resize: none;
+  }
+  
+  .contact-form legend,
+  .contact-form-response {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 1rem;
+    font-family: sans-serif;
+  }
+  
+  .contact-form input[type="submit"] {
+    width: 50%;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .contact-form *::placeholder {
+    color: #000;
+  }
+  
+  .contact-form [required]:valid {
+    border: thin solid var(--form-ok-color);
+  }
+  
+  .contact-form [required]:invalid {
+    border: thin solid var(--form-error-color);
+  }
+  
+  .contact-form-error {
+    margin-top: -1rem;
+    font-size: 80%;
+    background-color: var(--form-error-color);
+    color: #fff;
+    transition: all 800ms ease;
+  }
+  
+  .contact-form-error.is-active {
+    display: block;
+    animation: show-message 1s 1 normal 0s ease-out both;
+  }
+  
+  .none {
+    display: none;
+  }
+  
+  @keyframes show-message {
+    0% {
+      visibility: hidden;
+      opacity: 0;
+    }
+  
+    100% {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+
+
+
+  /*mensaje*/
+  .toast {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+    font-size: 17px;
+  }
+  
+  /* Mostrar la notificación */
+  .toast.show {
+    visibility: visible;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  }
+  
+  @keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+  }
+  
+  @keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+  }
+  

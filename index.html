@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en" data-dark>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Principal</title>
+
+
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.56/pdfmake.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.56/vfs_fonts.js"></script>
+
+</head>
+
+
+<body data-dark>
+
+    <h3 data-dark>MENÚ PRINCIPAL</h3>
+    <h4>Presione Ctrl + M o en el boton hamburguesa para mostrar/ocultar Menú de navegación</h4>
+
+
+    <section id="S1">
+        <h2>Reloj Digital y Alarma Sonora</h2>
+        <div id="reloj"></div>
+        <br>
+        <div class="flex-row-center">
+            <button id="activar-reloj">Iniciar Reloj</button>
+            <button id="desactivar-reloj" disabled>Detener Reloj</button>
+            <button id="activar-alarma">Iniciar Alarma</button>
+            <button id="desactivar-alarma">Detener Alarma</button>
+        </div>
+      
+
+    </section>
+
+
+    <section id="S2">
+        <h2>Juego Canvas</h2>
+        <div id="cuadro">
+            <div id="pelota"></div>
+        </div>
+
+
+
+
+    </section>
+
+
+
+
+
+
+    <section id="S3">Sección 3
+
+        <p id="tiempo"></p>
+        <p id="fecha"></p>
+
+        <div id="cajaRegresiva">
+            <p>Ingrese tiempo en segundos a disminuir</p>
+            <input type="text" id="segundosEntrados">
+            <button id="comenzarCuenta">Comienze</button>
+            <p id="probando"></p>
+
+        </div>
+        <div id="countdown"></div>
+
+
+
+
+
+
+    </section>
+
+
+
+
+
+
+
+
+    <section id="S4">Sección 4
+        <div id="conexion"></div>
+
+
+    </section>
+
+
+
+
+
+
+
+
+    <section id="S5">Sección 5
+<form class="contact-form" action="https://formsubmit.co/adriantriminoalcantara@gmail.com" method="POST" enctype="multipart/form-data">
+    <legend>Envíanos tus comentarios</legend>
+<input type="text" id="nombre" name="name" placeholder="Escribe tu nombre" title="Nombre solo acepta letras y espacios en blanco"  onblur="cajaNombre()" required>
+<input type="email"  id ="correo" name="email" placeholder="escribe tu correo" title="Email incorrecto" required onblur="cajaCorreo()">
+<input type="text" id="asunto" name="subject" placeholder="Asunto a tratar" title="El asunto es requerido" required>
+<textarea name="comments" id="comentario" cols="50" rows="5" placeholder="Escribe tus comentarios"  title="Tu comentario no debe exceder los 255 caracteres" required maxlength="255"></textarea>
+<input type="file" name="archivo" id="archivoASubir" accept=".doc,.docx,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document" multiple>
+<input type="submit" value="Enviar">
+
+<div class="contact-form-loader none">
+    <img src="./assets/bouncing-ball.svg" alt="Cargando">
+</div>
+
+<div class="contact-form-response none">
+    <p>Los datos han sido enviados</p>
+</div>
+
+
+
+
+
+</form>
+
+
+
+    </section>
+
+
+
+
+
+    <ul id="listaMenus">
+        <li class="li1">Sección 1</li>
+        <li class="li2">Sección 2</li>
+        <li class="li3">Sección 3</li>
+        <li class="li4">Sección 4</li>
+        <li class="li5">Sección 5</li>
+    </ul>
+
+
+
+    <img src="./btnHamburguesa.png" width="50px" height="30px" id="boton" title="De click para abrir menú de secciones">
+
+
+    <button id="dark-theme-btn">🌙</button>
+
+
+    <button id="btnScroll">&#9650</button>
+
+
+    <div id="toast" class="toast">¡Este es un mensaje de notificación!</div>
+
+
+
+    <script src="./code1.js"></script>
+</body>
+
+</html>
